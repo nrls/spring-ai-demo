@@ -1,15 +1,24 @@
 ###
-POST http://localhost:8080/api/ai/generate
+POST http://localhost:8080/api/ai/generateGeneral
 Content-Type: application/json
 
 {
-  "promptMessage": "Tell me a joke"
+  "promptMessage": "Tell me a joke about software engineers"
 }
 
 ###
-POST http://localhost:8080/api/ai/generateJoke
+POST http://localhost:8080/api/ai/generateJsonOutput
 Content-Type: application/json
 
 {
-  "topic": "Software engineers"
+  "league": "Premier League",
+  "position": "forward"
+}
+
+###
+POST http://localhost:8080/api/ai/chatIngestion
+Content-Type: application/json
+
+{
+  "promptMessage": "I cannot login, which team should I contact?"
 }

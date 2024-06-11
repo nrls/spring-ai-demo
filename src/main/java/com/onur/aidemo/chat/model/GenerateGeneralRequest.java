@@ -1,4 +1,4 @@
-package com.onur.aidemo;
+package com.onur.aidemo.chat.model;
 
 import lombok.Data;
 
