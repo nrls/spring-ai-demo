@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: ollamademo
+  ai:
+    ollama:
+      chat:
+        model: llama3
+      base-url: http://localhost:11434/
