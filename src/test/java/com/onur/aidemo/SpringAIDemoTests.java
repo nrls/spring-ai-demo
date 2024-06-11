@@ -1,10 +1,10 @@
-package com.onur.ollamademo;
+package com.onur.aidemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class OllamademoApplicationTests {
+class SpringAIDemoTests {
 
 	@Test
 	void contextLoads() {

@@ -1,11 +1,11 @@
-package com.onur.ollamademo;
+package com.onur.aidemo;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
 
 @Data
 @Accessors(chain = true)
-public class LlamaResponse {
+public class GenerateGeneralResponse {
 
     private String message;
 }

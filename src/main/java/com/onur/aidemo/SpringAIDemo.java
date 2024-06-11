@@ -1,13 +1,13 @@
-package com.onur.ollamademo;
+package com.onur.aidemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class OllamademoApplication {
+public class SpringAIDemo {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OllamademoApplication.class, args);
+		SpringApplication.run(SpringAIDemo.class, args);
 	}
 
 }
