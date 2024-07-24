@@ -4,7 +4,7 @@ spring:
   ai:
     ollama:
       embedding:
-        model: llama3
+        model: llama3.1:8b
       chat:
-        model: llama3
+        model: llama3.1:8b
       base-url: http://localhost:11434/
