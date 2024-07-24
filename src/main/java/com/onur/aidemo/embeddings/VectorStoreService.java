@@ -29,7 +29,7 @@ public class VectorStoreService {
         this.vectorStore = new SimpleVectorStore(embeddingModel);
     }
 
-    record Team(int id, String name, String description) {
+    record Team(int id, String teamName, String teamDescription) {
     }
 
     @Bean
@@ -37,9 +37,9 @@ public class VectorStoreService {
         return args -> {
             logger.info("Loading team data into vector store...");
 
-            // create a list of Team objects with id, name and description
+            // create a list of Team objects with id, teamName and teamDescription
             List<Team> teams = List.of(
-                    new Team(1, "Billing", "Responsible for visit, billing, and claim rule engine services"),
+                    new Team(1, "Billing", "Responsible for provider-facing flows like visit, billing, and some supporting services like claim rule engine services"),
                     new Team(2, "PACCA", "Everything related to payments, claim and case management"),
                     new Team(3, "MAPPPS", "Responsible for provider, medical products, pricing services"),
                     new Team(4, "POSE", "Everyting about policies, eligibility, and enrollment"),
@@ -47,8 +47,8 @@ public class VectorStoreService {
             );
 
             teams.forEach(team -> {
-                var document = new Document("name: " + team.name() + ", description: "
-                        + team.description(), Map.of("teamId", team.id()));
+                var document = new Document("teamName: " + team.teamName() + ", teamDescription: "
+                        + team.teamDescription(), Map.of("teamId", team.id()));
                 vectorStore.add(List.of(document));
 
             });

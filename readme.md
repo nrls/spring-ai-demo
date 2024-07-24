@@ -3,3 +3,8 @@
 
 ```bash
 docker exec -it ollama ollama run llama3.1:8b
+
+* For the previous one (3.0), use the following command:
+
+```bash
+docker exec -it ollama ollama run llama3

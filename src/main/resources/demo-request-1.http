@@ -1,0 +1,7 @@
+###
+POST http://localhost:8080/api/ai/generateGeneral
+Content-Type: application/json
+
+{
+  "promptMessage": "Tell me a joke about software engineers, make it 1 or 2 sentences long."
+}
