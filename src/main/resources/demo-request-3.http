@@ -6,9 +6,6 @@ Content-Type: application/json
   "promptMessage": "I cannot login to the system, which team should I contact? Only respond with the team name."
 }
 ###
-//{
-//  "promptMessage": "Provider cannot add invoices to the bills, which team should I contact?"
-//}
 Prompts:
 "Some pricing are wrong, which team should I contact? Only respond with the team name."
 "Provider cannot add invoices to the bills, which team should I contact? Only respond with the team name."
