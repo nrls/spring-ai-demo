@@ -1,4 +1,4 @@
-* # Spring AI Example
+# Spring AI Example
 This is a Spring Boot project that uses [Spring AI](https://spring.io/projects/spring-ai), and demonstrates how to interact with the local Meta-LLama model.
 
 ## Setup
